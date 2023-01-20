@@ -1,0 +1,438 @@
+/* CSS Reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    flex-direction: row;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background:url('IMG_20200116_004747_377.jpg') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 1300px;
+    z-index: -1;
+    opacity: 0.7;
+}
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    position: relative;
+    top: 1px;
+    left: 1px;
+    height: 59px;
+    margin: 3px 6px;
+}
+#name{
+    position: relative;
+    top: 2px;
+    left: 0px;
+    margin: 12px 3px;
+    color: red;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif, cursive;
+
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif, cursive;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 25px;
+}
+#navbar ul li a{
+    color: rgb(24, 8, 248);
+    display: block;
+    padding: 3px 22px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    border-radius: 20px;
+    font-size: 25px;
+    text-emphasis: none;
+}
+#navbar ul li a:hover{
+    color: black;
+     background-color: white;
+
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h4{
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#home h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#home h3 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about::before{
+    content: "";
+    position: absolute;
+    background-color:rgb(206, 53, 15);
+    height: 970px;
+    width: 100%;
+    top: 1300px;
+    left: 0px;
+    z-index: -1;
+    opacity:0.89;
+}
+#about h1{
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#about #who{
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+#about img{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: block;
+}
+#about h3{
+    color: rgb(15, 15, 15);
+    text-align: center;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#about #description{
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-size: 25px;
+    padding: 40px;
+    margin: 2px 300px ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#about #buttons{
+    display: flex;
+    flex-direction: row;
+}
+#about #resume{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#about #linkedin{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.services{
+    margin: 34px;
+    display: flex;
+    flex-direction: row;
+}
+#services-container{
+    position: relative;
+}
+.services::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: -7px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.3;
+
+}
+.services .box{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 2px 55px ;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px ;
+}
+
+.services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+.services .box p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+.h-primary{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-color:rgb(66, 240, 13) ;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skills-item{
+    padding: 34px;
+}
+.skills img{
+    padding: 4px;
+    height: 124px;
+    width: 130px;
+}
+.skills h2{
+    font-size: 20px;
+    padding: 2px;
+    color: rgb(255, 17, 0);
+    text-align: center;
+}
+.projects{
+    margin: 34px;
+    display: flex;
+    flex-direction: row;
+}
+#projects-container{
+    position: relative;
+}
+.projects::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: -7px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity:0.3;
+
+}
+.projects .boxe{
+    border:2px solid brown;
+    padding: 34px;
+    margin: 2px 5px ;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px ;
+}
+
+.projects .boxe img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+.projects .boxe p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+#freel{
+    text-align: center;
+    align-items: center;
+    padding: 3px 50px;
+    margin: 0px 3px;
+    width:100%;
+    height: 100%;
+    color: white;
+    background-color: rgb(245, 10, 10);
+    font-size: 40px;
+}
+#freel h2{
+    color: white;
+    background-color: rgb(245, 10, 10);
+}
+#freel #hire{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(252, 8, 8);
+    color: white;
+    margin: 17px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#contact{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: rgb(250, 250, 248) ;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#names{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+#messageIn{
+    color: red;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    padding: 4px;
+    margin-left: 175px;
+}
+.contact-box input,.contact-box textarea{
+    width: 100%;
+    padding: 19px 70px;
+    padding-bottom: 20px;
+    margin: 9px;
+    border-radius: 18px;
+    font-size: 25px;
+    border-color: red;
+}
+.contact-box form{
+    width: 40%;
+}
+.contact-box #send_message{
+    font: 25px rgb(9, 202, 236) bold;
+    border: 2px black solid;
+    color: red;
+    padding: 10px;
+    margin: 22px;
+    margin-left: 175px;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+.contact-box .Details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box .Details h1{
+    font-size: 35px;
+}
+.contact-box .Details p{
+    padding: 2px;
+    margin: 25px 400px;
+    font-size: 25px;
+}
+.main_details .dudo{  
+    display: flex;
+    flex-direction: row;
+    padding-right: 2px;
+}
+.main_details .dudo .dudos{
+    display: flex;
+    flex-direction: column;
+}
+.main_details .dudo img{
+    height: 40px;
+    margin: 3px 6px;
+    margin-left: 254px;
+    margin-right: -370px;
+    padding-right: 22px;
+}
+.main_details .dudo .dudos h2{
+    margin-bottom: 4px;
+    font-size: 40px;
+    margin-left: 400px;
+}
+footer{
+    background-color: rgb(245, 7, 7);
+    color: white;
+    padding: 9px 20px;
+}
